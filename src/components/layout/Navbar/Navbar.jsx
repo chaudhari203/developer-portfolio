@@ -148,7 +148,8 @@ export default function Navbar() {
             ))}
 
             <a
-                href="/resume.pdf"
+                // href="/resume.pdf"
+                  href={`${import.meta.env.BASE_URL}resume.pdf`}
               download="Laxmi_Chaudhari_Resume.pdf"
               className="flex items-center gap-2 bg-cyan-500 text-white px-5 py-3 rounded-full hover:bg-cyan-600 transition"
             >
@@ -211,7 +212,8 @@ export default function Navbar() {
           ))}
 
           <a
-             href="/resume.pdf"
+            //  href="/resume.pdf"
+             href={`${import.meta.env.BASE_URL}resume.pdf`}
               download="Laxmi_Chaudhari_Resume.pdf"
             className="mt-6 bg-cyan-500 text-white py-3 rounded-lg text-center font-semibold hover:bg-cyan-600 transition"
           >

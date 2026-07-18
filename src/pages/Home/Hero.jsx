@@ -1,5 +1,6 @@
 import { FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
 import { motion } from "framer-motion";
+import developer from "../../../src/assets/images/developer.jpg";
 export const Hero = () => {
   return (
     <section
@@ -41,7 +42,8 @@ export const Hero = () => {
               View Projects
             </a>
             <a
-              href="/resume.pdf"
+              // href="/resume.pdf"
+              href={`${import.meta.env.BASE_URL}resume.pdf`}
               download="Laxmi_Chaudhari_Resume.pdf"
               className="border-2 border-cyan-600 text-cyan-600 px-8 py-4 rounded-lg flex items-center gap-2 hover:bg-cyan-600 hover:text-white transition duration-300"
             >
@@ -59,8 +61,8 @@ export const Hero = () => {
           className="flex justify-center"
         >
           <img
-             src="https://images.openai.com/static-rsc-4/BPcI5uGDcrXndskVxEpjohSAXrZnrwETHTsh3BJNM51DmN9-fjWRY4JgIqmPPC0U8WI9AVxJQhzshw6iV5kOyeNfDpkj4RHnEl8I5TWLsaatsGTkhVFqC4l-ID-5xygNdW-iKZ9Fj0DNn5bsjnWgVL2i3bMpu_vg7G1T1-ZD4EQP4_P7HULqrzFubDhRo5bb?purpose=fullsize"
-            alt="Profile"
+            src={developer}
+            alt="developer"
             className="w-200 lg:w-[550px] rounded-full   shadow-2xl shadow-cyan-300/40"
           />
         </motion.div>

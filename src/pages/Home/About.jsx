@@ -5,6 +5,7 @@ import {
   FaDatabase,
   FaServer,
 } from "react-icons/fa";
+import about from "../../../src/assets/images/about.jpg";
 
 export const About = () => {
   const highlights = [
@@ -75,7 +76,7 @@ export const About = () => {
             viewport={{ once: true }}
           >
             <img
-              src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=900&q=80"
+              src={about}
               alt="About"
               className="rounded-2xl shadow-xl border border-cyan-100 w-full"
             />
